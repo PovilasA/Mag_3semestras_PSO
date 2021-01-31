@@ -1,0 +1,44 @@
+%% verbatim-package-demo.tex
+%% Bent E. Petersen
+%% Oct 23, 2000
+\documentclass[11pt]{article}
+\usepackage{verbatim}
+%% \documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+%%  \usepackage[L7x]{fontenc}
+%% \usepackage[lithuanian]{babel}
+%% \usepackage{url}
+%% \usepackage{indentfirst}
+%% \urlstyle{restrictedbreak}
+%% \usepackage{parskip}
+%% \setlength{\parindent}{15pt}
+%% \usepackage{graphicx}
+%% \usepackage{relsize}
+%% \usepackage{natbib}
+%% \usepackage{amsmath}
+%% \usepackage{setspace}
+%% \usepackage{amsfonts}
+%% \usepackage{amssymb}
+%% \usepackage{verbatim}
+%% \usepackage[unicode]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt plus 6pt minus 4pt}
+
+\title{\jobname.tex}
+\author{Bent Petersen}
+\date{Oct 23, 2000}
+
+\begin{document}
+
+This document demonstrates the 
+\begin{verbatim}
+> eqn:=diff(y(t),t,t)+4*y(t)=0:
+> inits:=y(0)=1,D(y)(0)=-1:
+> dsolve({eqn,inits},y(t));
+\end{verbatim}
+$$
+\mathrm{y}(t)= - \frac{1}{2}\,\sin(2\,t) + \cos(2\,t)
+$$
+
+\end{document}
